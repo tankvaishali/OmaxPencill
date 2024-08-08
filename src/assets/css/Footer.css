@@ -1,0 +1,28 @@
+
+.copyright{
+    font-size: 14px;
+}
+.footer_bg{
+    background-image: url("../image/office-school-supplies-white-background_771335-26417.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+box-shadow: inset 0px 0px 300px 300px rgba(0, 32, 65, 0.877);
+}
+.Socialicons{
+    display: flex;
+    padding: 10px;
+    background-color: var(--seccolor--);
+    transition: all 0.3s ease-in-out;
+}
+.Socialicons:hover{
+    background-color: var(--infocolor--);
+    border-top-right-radius: 0.5% !important;
+    border-bottom-left-radius: 0.5% !important;
+}
+.get_touchcolor{
+    color:rgb(81, 192, 252);
+}
+.footerlink_hover:hover{
+color: var(--infocolor--) !important;
+}

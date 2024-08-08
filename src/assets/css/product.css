@@ -1,0 +1,74 @@
+.productpage_bgimagebck{
+    background-image: url("../image/colorful-school-supplies-shopping-basket-gray-background-with-copy-text-space-stack-books-with-colorful-covers-concept-returning-school-new-academic-year_73683-2219.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 1500px 1500px rgba(0, 56, 119, 0.374);
+}
+.productpage_bg{
+    background-image: url("../image/vintage-style-photo-girl-is-happily-coloring-book_1150-6166.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin-top: 200px !important;
+}
+
+.productbg_color{
+    background-image:linear-gradient(90deg,rgba(255, 255, 255, 0),rgba(107, 172, 251, 0.107),rgba(123, 182, 255, 0.95));
+    height: 100vh;
+    width: 100%;    
+}
+.productpera_color{
+    /* background-color: var(--primarycolor--); */
+    background-image:linear-gradient(360deg,rgb(1, 32, 70) ,rgba(35, 116, 215, 0.913),rgba(174, 209, 252, 0.95));
+
+    font-size: 18px;
+    border-radius:20px;
+}
+.hover_image{
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.hover_image img{
+    transition: all 0.4s ease-in-out;
+}
+.product_cards:hover .hover_image img{
+    transform: scale(1.1);
+}
+.procard_tittle{
+    color: var(--seccolor--);
+}
+.product_cards:hover .procard_tittle{
+    color: var(--infocolor--);
+}
+
+/* animation updown start*/
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  .animated-image {
+    display: block;
+    margin: 0 auto;
+    animation: upDown 3s ease-in-out infinite;
+  }
+/* animation updown end*/
+  

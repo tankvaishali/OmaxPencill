@@ -1,0 +1,128 @@
+.portfolio,
+.certicicate {
+  margin-bottom: 80px;
+}
+
+.gallery_bg {
+  /* background-image: url("../Images/gallery_images/stationery-apointment-book-pencil-ruler.jpg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 105vh;
+  background-attachment: fixed;
+}
+
+.gallerycontent {
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.galleryback {
+  margin-top: -90px;
+  background: rgba(8, 8, 8, 0.712);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  height: 105vh;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.galleryimage {
+  position: relative;
+  display: inline-block;
+  /* cursor: zoom-in; */
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.galleryimage::before,
+.galleryimage::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 45%;
+  border: 7px solid transparent;
+  transition: width 2s, height 2s, border-color 0.3s;
+  z-index: 1;
+}
+
+.galleryimage::before {
+  top: 0;
+  left: 0;
+  border-top-width: 45%;
+  border-left-width: 45%;
+  border-top-color: var(--seccolor--);
+  border-left-color: var(--infocolor--);
+}
+
+.galleryimage::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 45%;
+  border-right-width: 45%;
+  border-bottom-color: var(--seccolor--);
+  border-right-color: var(--infocolor--);
+}
+
+.galleryimage:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryimage:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryimage:hover .image {
+  transform: scale(1.1);
+  transition: all 4s;
+}
+
+.certificatetitle {
+  color: var(--infocolor--);
+  font-family: var(--fontpri--) !important;
+}
+
+.certificatetitle span {
+  color: var(--seccolor--) !important;
+}
+
+.certigalleryimage {
+  overflow: hidden;
+  border: 1.5px solid #599bec75;
+  transition: all 0.5s ease-in-out !important;
+}
+
+.certiimage {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease !important;
+}
+
+.certigalleryimage:hover .certiimage {
+  transform: scale(1.1) !important;
+}
+
+.ril-loading-circle {
+  display: none;
+}
+
+.ril__navButtonNext,
+.ril__navButtonPrev {
+  background-color: var(--infocolor--) !important;
+}

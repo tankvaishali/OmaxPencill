@@ -1,0 +1,146 @@
+
+.span {
+    font-size: '60px';
+    font-weight: 400;
+    color: var(--seccolor--);
+    font-family: var(--fontpri--) !important;
+}
+
+.zoom-animation {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom:hover .zoom-animation {
+    transform: scale(1.1);
+}
+
+.aboutBg {
+    /* background-image: url(../Images/slider_images/about-us_banner.jpg); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+
+/* / button / */
+
+
+.btn_hover {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: 1.5px solid white;
+    width: fit-content;
+}
+
+.btnedit {
+    position: relative;
+    text-decoration: none;
+    background-color: var(--primarycolor--);
+    padding: 10px 50px;
+    z-index: 1;
+    color: white;
+    border-radius: 2px;
+}
+
+.btnedit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1, 44, 96);
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 0.5s ease;
+    transform: scaleX(1);
+}
+
+.btnedit:hover:before {
+    transform-origin: right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+
+/* / button / */
+
+
+/* / team / */
+
+.linkinsta .instaface {
+    background: var(--seccolor--);
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    transition: all .8s;
+}
+
+.linkinsta:hover .instaface {
+    background: var(--primarycolor--);
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px 0px 10px 0px;
+}
+
+/* / team / */
+
+/* / brand / */
+.brandBG {
+    background: url('../image/colored-pencils-school-black-background-ai-generative_123827-23987.jpg') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+box-shadow: inset 0px 0px 1500px 1500px rgba(0, 23, 46, 0.363);
+}
+
+.overlayeffect {
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+/* / brand / */
+
+.lottie {
+    position: 'absolute';
+    top: 0;
+    left: 0;
+    width: '100%';
+    height: '100%';
+}
+
+
+/* about last*/
+
+
+.news_successimage {
+    transform: translateY(55px);
+}
+
+.news_imagesize {
+    height: 250px;
+    width: 150px;
+
+}
+
+@media only screen and (min-width: 999px) and (max-width: 1250px) {
+    .news_imagesize {
+        width: 120px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .news_successimage {
+        transform: translateY(0) !important;
+    }
+
+    .news_imagesize {
+        height: 250px;
+        width: 280px !important;
+    }
+
+
+}
+
+/* about last*/
